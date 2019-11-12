@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Randomizeer</string>
+    <string name="OverallSize">What is the size to be chosen from?</string>
+    <string name="submit">Submit</string>
+    <string name="Names">Please enter the names of the people/things and seperate them with a comma \",\"</string>
+    <string name="selected">What is the size to be selected from the size written above?</string>
+</resources>
