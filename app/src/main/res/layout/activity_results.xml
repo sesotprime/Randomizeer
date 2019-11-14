@@ -228,15 +228,15 @@
 
     <TextView
         android:id="@+id/resultDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="TextView"
-        android:gravity="center"
+        android:layout_width="321dp"
+        android:layout_height="205dp"
         android:background="@color/DarkRed"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH30"
-        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV75"
-        app:layout_constraintStart_toStartOf="@+id/guidelinePointV20"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH15" />
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH37"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV90"
+        app:layout_constraintStart_toStartOf="@+id/guidelinePointV10"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH12" />
 
 </android.support.constraint.ConstraintLayout>
