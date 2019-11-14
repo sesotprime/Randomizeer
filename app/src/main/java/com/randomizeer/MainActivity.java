@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     EditText RanName;
     String[] namelist;
     Button submit;
-
+    int count=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,12 +70,13 @@ public class MainActivity extends AppCompatActivity {
 
         test.setText("");
         test2.setText("");
+
         while (i < SelectSize) {
             int hold = r.nextInt((max - min + 1) + min);
 
             if(intArrayContains(Randomholder,hold)==true)
             {
-                hold = r.nextInt((max - min + 1) + min);
+                count++;
             }
             else {
                 Randomholder[i] = hold;

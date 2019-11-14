@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Results">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/resultToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Cafe_Noir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </android.support.v7.widget.Toolbar>
+
     <android.support.constraint.Guideline
         android:id="@+id/guidelinePointV10"
         android:layout_width="0dp"
@@ -69,7 +79,7 @@
         app:layout_constraintGuide_percent="0.90" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH10"
+        android:id="@+id/guidelineH13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -83,7 +93,7 @@
         app:layout_constraintGuide_percent="0.12" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH15"
+        android:id="@+id/guidelineH17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -111,7 +121,7 @@
         app:layout_constraintGuide_percent="0.25" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH30"
+        android:id="@+id/guidelineH32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -230,7 +240,7 @@
         android:id="@+id/resultDisplay"
         android:layout_width="321dp"
         android:layout_height="205dp"
-        android:background="@color/DarkRed"
+        android:background="@color/Sandy_Taupe"
         android:gravity="center"
         android:text="TextView"
         android:textSize="20sp"
@@ -238,5 +248,9 @@
         app:layout_constraintEnd_toStartOf="@+id/guidelinePointV90"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV10"
         app:layout_constraintTop_toTopOf="@+id/guidelineH12" />
+    <!--<Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>-->
 
 </android.support.constraint.ConstraintLayout>

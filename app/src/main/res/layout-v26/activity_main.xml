@@ -70,7 +70,7 @@
         app:layout_constraintGuide_percent="0.90" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH10"
+        android:id="@+id/guidelineH13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -252,7 +252,7 @@
         app:layout_constraintLeft_toRightOf="@+id/guidelinePointV20"
         app:layout_constraintRight_toLeftOf="@id/guidelinePointV80"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV10"
-        app:layout_constraintTop_toBottomOf="@id/guidelineH10" />
+        app:layout_constraintTop_toBottomOf="@id/guidelineH13" />
     
     <EditText
         android:id="@+id/totalSizeInput"

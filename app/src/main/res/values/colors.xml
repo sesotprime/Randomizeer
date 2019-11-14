@@ -142,5 +142,11 @@
         <color name="MediumBlue">#0000CD</color>
         <color name="DarkBlue">#00008B</color>
         <color name="Navy">#000080</color>
+        <color name="Zinwaldite_Brown">#281e09</color>
+        <color name="Cafe_Noir">#483611</color>
+        <color name="UC_Gold">#c3922e</color>
+        <color name="Sandy_Taupe">#9e7625</color>
+        <color name="Nicke">#766F62</color>
         <color name="Black">#000000</color>
+
 </resources>
