@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
             String[] testNamelist = namelist;
             results.putExtra("strings", testName);
             results.putExtra("Namelist", testNamelist);
+            results.putExtra("SelectSize",SelectSize);
             startActivity(results);
     }
     private boolean intArrayContains(int[] intArray,int value){

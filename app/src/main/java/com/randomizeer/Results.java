@@ -15,9 +15,9 @@ public class Results extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-        toolbar = findViewById(R.id.resultToolbar);
-        ActionBar actionBar = getActionBar();
-//        actionBar.setDisplayHomeAsUpEnabled(true);
+        //toolbar = findViewById(R.id.resultToolbar);
+        //ActionBar actionBar = getActionBar();
+        //actionBar.setDisplayHomeAsUpEnabled(true);
         showResults();
     }
 
@@ -28,7 +28,11 @@ public class Results extends MainActivity {
         MainActivity mainActivity = new MainActivity();
         String[] testArray = intent.getStringArrayExtra("strings");
         String[] testNamelist = intent.getStringArrayExtra("Namelist");
-        int arraySize = testNamelist.length-count;
+        int selectSize =intent.getIntExtra("SelectSize",0);
+        int arraySize = selectSize;
+        //Result.append("" + arraySize);
+        //Result.append(" " + selectSize);
+
         for(int i = 0; i < arraySize; i++) {
             Result.append(""+ testArray[i]);
             Result.append(" ");
