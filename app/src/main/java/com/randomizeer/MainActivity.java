@@ -22,9 +22,7 @@ public class MainActivity extends AppCompatActivity {
     int[] Randomholder = new int[100];
     String[] Nameholder = new String[100];
     int i = 0;
-    EditText RanName;
     String[] namelist;
-    Button submit;
     int count=0;
 
     @Override
@@ -90,10 +88,8 @@ public class MainActivity extends AppCompatActivity {
     }
         public void goToResults() {
             Intent results = new Intent(this, Results.class);
-            String[] testName = Nameholder;
-            String[] testNamelist = namelist;
-            results.putExtra("strings", testName);
-            results.putExtra("Namelist", testNamelist);
+            String[] Name = Nameholder;
+            results.putExtra("strings", Name);
             results.putExtra("SelectSize",SelectSize);
             startActivity(results);
     }
