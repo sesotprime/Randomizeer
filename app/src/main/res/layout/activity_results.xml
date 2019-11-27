@@ -5,15 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Results">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/resultToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/Cafe_Noir"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </android.support.v7.widget.Toolbar>
+
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelinePointV10"
@@ -128,13 +120,13 @@
         app:layout_constraintGuide_percent="0.30" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH37"
+        android:id="@+id/guidelineH39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.37" />
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH40"
+        android:id="@+id/guidelineH44"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -148,13 +140,13 @@
         app:layout_constraintGuide_percent="0.45" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH50"
+        android:id="@+id/guidelineH51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.50" />
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH52"
+        android:id="@+id/guidelineH53"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -182,7 +174,7 @@
         app:layout_constraintGuide_percent="0.57" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH60"
+        android:id="@+id/guidelineH63"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -244,7 +236,7 @@
         android:gravity="center"
         android:text="TextView"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH37"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH39"
         app:layout_constraintEnd_toStartOf="@+id/guidelinePointV90"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV10"
         app:layout_constraintTop_toTopOf="@+id/guidelineH12" />

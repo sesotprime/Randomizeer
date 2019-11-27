@@ -70,12 +70,13 @@
         app:layout_constraintGuide_percent="0.90" />
 
 
+
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.11" />
+        app:layout_constraintGuide_percent="0.12" />
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH13"
         android:layout_width="wrap_content"
@@ -123,29 +124,30 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.32" />
-    <android.support.constraint.Guideline
-        android:id="@+id/guidelineH35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.35" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH37"
+        android:id="@+id/guidelineH36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.37" />
+        app:layout_constraintGuide_percent="0.36" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH40"
+        android:id="@+id/guidelineH39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.42" />
+        app:layout_constraintGuide_percent="0.38030097" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineH45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -166,39 +168,39 @@
         app:layout_constraintGuide_percent="0.50" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH52"
+        android:id="@+id/guidelineH53"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="347dp" />
+        app:layout_constraintGuide_percent="0.54" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH55"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.55" />
+        app:layout_constraintGuide_percent="0.61" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH57"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.57" />
+        app:layout_constraintGuide_percent="0.59" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH58"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.58" />
+        app:layout_constraintGuide_percent="0.7" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH60"
+        android:id="@+id/guidelineH63"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.61" />
+        app:layout_constraintGuide_percent="0.63" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH68"
@@ -252,7 +254,8 @@
         android:id="@+id/totalSize"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/UC_Gold"
+        android:textAlignment="center"
+        android:background="@drawable/textview_round"
         android:text="@string/OverallSize"
         android:textColor="@color/White"
         android:textSize="17sp"
@@ -265,98 +268,103 @@
         app:layout_constraintTop_toTopOf="@+id/guidelineH12"
         app:layout_constraintVertical_bias="1.0" />
 
+
     <EditText
         android:id="@+id/totalSizeInput"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:autofillHints=""
-        android:background="@color/Nicke"
+        android:background="@drawable/edit_round"
         android:ems="10"
         android:hint="@string/_20"
         android:inputType="number"
-        android:textColor="@color/White"
+        android:textColor="@color/Black"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH25"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH22"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH20" />
-
+        app:layout_constraintTop_toBottomOf="@+id/totalSize"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/Names"
-        android:layout_width="410dp"
-        android:layout_height="51dp"
-        android:background="@color/UC_Gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_round"
         android:text="@string/Names"
+        android:textAlignment="center"
         android:textColor="@color/White"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH35"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH36"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV90"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/guidelinePointV20"
         app:layout_constraintRight_toLeftOf="@id/guidelinePointV80"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guidelineH28"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH28"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/NamesInput"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/Nicke"
+        android:background="@drawable/edit_round"
         android:ems="10"
         android:hint="@string/frank_paul_femi"
         android:importantForAutofill="no"
         android:inputType=""
-        android:textColor="@color/White"
+        android:textColor="@color/Black"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH40"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH44"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH37"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH36"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/selectedSize"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/UC_Gold"
+        android:background="@drawable/textview_round"
         android:text="@string/selected"
         android:textColor="@color/White"
         android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="@+id/guidelineH52"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineH53"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/guidelinePointV20"
         app:layout_constraintRight_toLeftOf="@id/guidelinePointV80"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH44"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH47"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/selectedSizeInput"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/Nicke"
+        android:background="@drawable/edit_round"
         android:ems="10"
         android:hint="@string/_3"
         android:importantForAutofill="no"
         android:inputType="number"
         android:textColor="@color/White"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH60"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH57"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH55" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineH53" />
 
 
     <Button
         android:id="@+id/Submit"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/UC_Gold"
+        android:background="@drawable/button_round"
         android:onClick="allButtonClickHandler"
+        android:textColor="@color/White"
         android:text="@string/submit"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@id/guidelineH75"
