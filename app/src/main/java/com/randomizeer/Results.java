@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -32,15 +33,27 @@ public class Results extends MainActivity {
         int arraySize = selectSize;
         //Result.append("" + arraySize);
         //Result.append(" " + selectSize);
-
+        int a = arraySize;
         for(int i = 0; i < arraySize; i++) {
+
             Result.append(""+ testArray[i]);
-            Result.append(" ");
+            if (i==arraySize-1)
+            {
+                Result.append(" ");
+            }
+            else{
+                Result.append(",");
+            }
         }
         //Result.setText("" +count);
     }
     @Override
     public void onBackPressed(){
+        Intent backToMain = new Intent(this,MainActivity.class);
+        startActivity(backToMain);
+    }
+
+    public void allButtonClickHandler(View view) {
         Intent backToMain = new Intent(this,MainActivity.class);
         startActivity(backToMain);
     }

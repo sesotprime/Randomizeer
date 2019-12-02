@@ -243,7 +243,7 @@
         app:layout_constraintGuide_percent="0.83" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH90"
+        android:id="@+id/guidelineH85"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -388,7 +388,7 @@
         android:visibility="invisible"
         android:textSize="17sp"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH90"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH85"
         app:layout_constraintEnd_toStartOf="@+id/guidelinePointV37"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV10"
         app:layout_constraintTop_toTopOf="@+id/guidelineH78" />

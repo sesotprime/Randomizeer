@@ -7,6 +7,16 @@
     tools:context=".Results">
 
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="208dp"
+        android:layout_height="17dp"
+        android:text="Developed by Shin-Shil"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH85"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV75"
+        app:layout_constraintStart_toStartOf="@+id/guidelinePointV25"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH83" />
+
     <android.support.constraint.Guideline
         android:id="@+id/guidelinePointV10"
         android:layout_width="0dp"
@@ -222,27 +232,88 @@
         app:layout_constraintGuide_percent="0.83" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH90"
+        android:id="@+id/guidelineH85"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.90" />
-
+        app:layout_constraintGuide_percent="0.85" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineH88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineH91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
     <TextView
         android:id="@+id/resultDisplay"
         android:layout_width="321dp"
         android:layout_height="205dp"
-        android:background="@color/Sandy_Taupe"
+        android:background="@color/Black"
         android:gravity="center"
         android:text="TextView"
+        android:textColor="@color/White"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH39"
         app:layout_constraintEnd_toStartOf="@+id/guidelinePointV90"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV10"
         app:layout_constraintTop_toTopOf="@+id/guidelineH12" />
+
+    <TextView
+        android:id="@+id/Developer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Developed by Shin-Shil"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH85"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV75"
+        app:layout_constraintStart_toStartOf="@+id/guidelinePointV25"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH83" />
+    <TextView
+        android:id="@+id/Website"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:text="shinshil.com"
+        android:autoLink="web"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH88"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV75"
+        app:layout_constraintStart_toStartOf="@+id/guidelinePointV25"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineH85" />
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:text="okoshinshil@gmail.com"
+        android:autoLink="email"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH91"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV75"
+        app:layout_constraintStart_toStartOf="@+id/guidelinePointV25"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineH88" />
     <!--<Button
         android:id="@+id/backButton"
         android:layout_width="0dp"
         android:layout_height="0dp"/>-->
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_round"
+        android:onClick="allButtonClickHandler"
+        android:text="@string/Back"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineH75"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV90"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelinePointV50"
+        app:layout_constraintRight_toRightOf="@id/guidelinePointV80"
+        app:layout_constraintStart_toStartOf="@+id/guidelinePointV62"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH68"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
