@@ -11,10 +11,10 @@
         android:id="@+id/textView2"
         android:layout_width="208dp"
         android:layout_height="17dp"
-        android:text="Developed by Shin-Shil"
+        android:text="@string/developed_by_shin_shil"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH85"
-        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV75"
-        app:layout_constraintStart_toStartOf="@+id/guidelinePointV25"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV80"
+        app:layout_constraintStart_toStartOf="@+id/guidelinePointV20"
         app:layout_constraintTop_toTopOf="@+id/guidelineH83" />
 
     <android.support.constraint.Guideline
@@ -255,7 +255,7 @@
         android:layout_height="205dp"
         android:background="@color/Black"
         android:gravity="center"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textColor="@color/White"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH39"
@@ -264,36 +264,29 @@
         app:layout_constraintTop_toTopOf="@+id/guidelineH12" />
 
     <TextView
-        android:id="@+id/Developer"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="Developed by Shin-Shil"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH85"
-        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV75"
-        app:layout_constraintStart_toStartOf="@+id/guidelinePointV25"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH83" />
-    <TextView
         android:id="@+id/Website"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:clickable="true"
-        android:text="shinshil.com"
+        android:text="@string/shinshil_com"
         android:autoLink="web"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH88"
         app:layout_constraintEnd_toStartOf="@+id/guidelinePointV75"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV25"
-        app:layout_constraintTop_toBottomOf="@+id/guidelineH85" />
+        app:layout_constraintTop_toBottomOf="@+id/guidelineH85"
+        android:focusable="true" />
     <TextView
         android:id="@+id/Email"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:clickable="true"
-        android:text="okoshinshil@gmail.com"
+        android:text="@string/okoshinshil_gmail_com"
         android:autoLink="email"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH91"
         app:layout_constraintEnd_toStartOf="@+id/guidelinePointV75"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV25"
-        app:layout_constraintTop_toBottomOf="@+id/guidelineH88" />
+        app:layout_constraintTop_toBottomOf="@+id/guidelineH88"
+        android:focusable="true" />
     <!--<Button
         android:id="@+id/backButton"
         android:layout_width="0dp"
@@ -309,11 +302,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/guidelineH75"
         app:layout_constraintEnd_toStartOf="@+id/guidelinePointV90"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="@+id/guidelinePointV50"
         app:layout_constraintRight_toRightOf="@id/guidelinePointV80"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV62"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH68"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineH68"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -111,12 +111,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.25" />
+
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.28" />
+        app:layout_constraintGuide_percent="0.28180575" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH32"
@@ -130,7 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.36" />
+        app:layout_constraintGuide_percent="0.35" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH39"
@@ -151,7 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.44" />
+        app:layout_constraintGuide_percent="0.43" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH47"
@@ -165,7 +166,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.50" />
+        app:layout_constraintGuide_percent="0.49" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineH53"
@@ -291,20 +292,20 @@
 
     <TextView
         android:id="@+id/Names"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/textview_round"
         android:text="@string/Names"
         android:textAlignment="center"
         android:textColor="@color/White"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH36"
-        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV90"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH45"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/guidelinePointV20"
         app:layout_constraintRight_toLeftOf="@id/guidelinePointV80"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH28"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH36"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
@@ -316,15 +317,15 @@
         android:hint="@string/frank_paul_femi"
         android:importantForAutofill="no"
         android:inputType=""
-        android:textColorHint="@color/White"
-        android:textColor="@color/White"
-        android:textSize="17sp"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH44"
+        android:textColor="@color/White"
+        android:textColorHint="@color/White"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH36"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH44"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -333,16 +334,16 @@
         android:layout_height="0dp"
         android:background="@drawable/textview_round"
         android:text="@string/selected"
+        android:textAlignment="center"
         android:textColor="@color/White"
         android:textSize="17sp"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/guidelineH53"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH58"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/guidelinePointV20"
         app:layout_constraintRight_toLeftOf="@id/guidelinePointV80"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH47"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH63"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -354,14 +355,14 @@
         android:hint="@string/_3"
         android:importantForAutofill="no"
         android:inputType="number"
-        android:textColorHint="@color/White"
-        android:textColor="@color/White"
-        android:textSize="17sp"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH57"
+        android:textColor="@color/White"
+        android:textColorHint="@color/White"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH75"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH53" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineH58" />
 
 
     <Button
@@ -369,42 +370,30 @@
         android:layout_width="103dp"
         android:layout_height="46dp"
         android:background="@drawable/button_round"
+        android:enabled="true"
         android:onClick="allButtonClickHandler"
         android:text="@string/submit"
         android:textColor="@color/White"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@id/guidelineH75"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH85"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="@+id/guidelinePointV50"
         app:layout_constraintRight_toRightOf="@id/guidelinePointV80"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV75"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH68" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineH83" />
 
     <TextView
-        android:id="@+id/Test"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/textview"
-        android:textSize="17sp"
+        android:id="@+id/textView"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:text="TextView"
         android:visibility="invisible"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH75"
-        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV37"
-        app:layout_constraintStart_toStartOf="@+id/guidelinePointV10"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH65" />
-
-    <TextView
-        android:id="@+id/Test2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/textview"
-        android:visibility="invisible"
-        android:textSize="17sp"
-        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH85"
-        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV37"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinePointV62"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guidelinePointV10"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH78" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineH83"
+        app:layout_constraintVertical_bias="0.25" />
 
 
 </android.support.constraint.ConstraintLayout>

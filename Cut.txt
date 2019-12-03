@@ -1,0 +1,208 @@
+//SampleSize = Integer.parseInt(size.getText().toString().trim());
+            //SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+            /*SampleSize = Integer.parseInt(size.getText().toString().trim());
+            SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+            ConName = RanName.getText().toString().trim();
+            namelist = ConName.split(",");
+
+            RanName.addTextChangedListener(inputTextWatched);
+            size.addTextChangedListener(inputTextWatched);
+            Ssize.addTextChangedListener(inputTextWatched);
+
+             */
+                /*try {
+                    SampleSize = Integer.parseInt(size.getText().toString().trim());
+                    SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                    ConName = RanName.getText().toString().trim();
+                    namelist = ConName.split(",");
+                    validateInput();
+                } catch (NumberFormatException e) {
+                    if (TextUtils.isDigitsOnly(size.getText().toString().trim())) {
+                        size.setError("Enter the size to be chosen from");
+                        if (TextUtils.isDigitsOnly(Ssize.getText().toString().trim())) {
+                            Ssize.setError("Enter the size to be chosen");
+                            if (TextUtils.isEmpty(ConName)) {
+                                RanName.setError("Enter the names to be selected");
+                            }
+                            else{
+                                SampleSize = Integer.parseInt(size.getText().toString().trim());
+                                SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                                ConName = RanName.getText().toString().trim();
+                                namelist = ConName.split(",");
+                                validateInput();
+                            }
+                        }
+                        else if (TextUtils.isEmpty(ConName)){
+                            RanName.setError("Enter the names to be selected");
+                        }
+                        else{
+                            SampleSize = Integer.parseInt(size.getText().toString().trim());
+                            SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                            ConName = RanName.getText().toString().trim();
+                            namelist = ConName.split(",");
+                            validateInput();
+                        }
+                    }
+                    else if (TextUtils.isDigitsOnly(Ssize.getText().toString().trim())) {
+                        Ssize.setError("Enter the size to be chosen");
+                        if (TextUtils.isDigitsOnly(size.getText().toString().trim())) {
+                            size.setError("Enter the size to be chosen from");
+                            if (TextUtils.isEmpty(ConName)) {
+                                RanName.setError("Enter the names to be selected");
+                            }
+                            else{
+                                SampleSize = Integer.parseInt(size.getText().toString().trim());
+                                SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                                ConName = RanName.getText().toString().trim();
+                                namelist = ConName.split(",");
+                                validateInput();
+                            }
+                        }
+                        else if (TextUtils.isEmpty(ConName)) {
+                            RanName.setError("Enter the names to be selected");
+                        }
+                        else{
+                            SampleSize = Integer.parseInt(size.getText().toString().trim());
+                            SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                            ConName = RanName.getText().toString().trim();
+                            namelist = ConName.split(",");
+                            validateInput();
+                        }
+                    }
+                    else if (TextUtils.isEmpty(ConName)) {
+                        RanName.setError("Enter the names to be selected");
+                        if (TextUtils.isDigitsOnly(size.getText().toString().trim())) {
+                            size.setError("Enter the size to be chosen from");
+                            if (TextUtils.isDigitsOnly(Ssize.getText().toString().trim())) {
+                                Ssize.setError("Enter the size to be chosen");
+                            }
+                            else{
+                                SampleSize = Integer.parseInt(size.getText().toString().trim());
+                                SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                                ConName = RanName.getText().toString().trim();
+                                namelist = ConName.split(",");
+                                validateInput();
+                            }
+                        }
+                        else if (TextUtils.isDigitsOnly(Ssize.getText().toString().trim())) {
+                            Ssize.setError("Enter the size to be chosen");
+                        }
+                        else{
+                            SampleSize = Integer.parseInt(size.getText().toString().trim());
+                            SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                            ConName = RanName.getText().toString().trim();
+                            namelist = ConName.split(",");
+                            validateInput();
+                        }
+                    }
+                    //validateInput();
+                }/*
+            /*
+            if(TextUtils.isEmpty(ConName))
+            {
+                RanName.setError("Enter the names to be selected");
+                return;
+            }
+            else if(TextUtils.isDigitsOnly(size.getText().toString().trim())){
+                size.setError("Enter the size to be chosen from");
+                return;
+            }
+            else if (!TextUtils.isDigitsOnly(Ssize.getText().toString().trim())){
+                Ssize.setError("Enter the size to be chosen");
+                return;
+            }
+            *///validateInput();
+             /*
+            if (myIsDigitsOnly(size.getText().toString())) {
+                size.setError("Enter the size to be chosen from");
+                textView.append("Go 1 1");
+
+                    if (TextUtils.isEmpty(ConName)) {if (myIsDigitsOnly(Ssize.getText().toString())) {
+                    Ssize.setError("Enter the size to be chosen");
+                    textView.append("Go 1 2");
+                        RanName.setError("Enter the names to be selected");
+                        textView.append("Go 1 3");
+                    }
+                    if (myIsDigitsOnly(size.getText().toString()) && myIsDigitsOnly(Ssize.getText().toString()) && TextUtils.isEmpty(ConName)) {
+                        SampleSize = Integer.parseInt(size.getText().toString().trim());
+                        SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                        ConName = RanName.getText().toString().trim();
+                        namelist = ConName.split(",");
+                        validateInput();
+                    }
+                } else if (TextUtils.isEmpty(ConName)) {
+                    RanName.setError("Enter the names to be selected");
+                    textView.append("Go 1 4");
+
+                } if (myIsDigitsOnly(size.getText().toString()) && myIsDigitsOnly(Ssize.getText().toString()) && TextUtils.isEmpty(ConName)) {
+                    SampleSize = Integer.parseInt(size.getText().toString().trim());
+                    SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                    ConName = RanName.getText().toString().trim();
+                    namelist = ConName.split(",");
+                    validateInput();
+                }
+            }
+
+
+            if (myIsDigitsOnly(Ssize.getText().toString().trim())) {
+                Ssize.setError("Enter the size to be chosen");
+                if (myIsDigitsOnly(size.getText().toString().trim())) {
+                    size.setError("Enter the size to be chosen from");
+                    if (TextUtils.isEmpty(ConName)) {
+                        RanName.setError("Enter the names to be selected");
+                        if (myIsDigitsOnly(size.getText().toString()) && myIsDigitsOnly(Ssize.getText().toString()) && TextUtils.isEmpty(ConName)) {
+                            SampleSize = Integer.parseInt(size.getText().toString().trim());
+                            SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                            ConName = RanName.getText().toString().trim();
+                            namelist = ConName.split(",");
+                            validateInput();
+                        }
+                    }
+
+                }
+                if (TextUtils.isEmpty(ConName)) {
+                    RanName.setError("Enter the names to be selected");
+                    if (myIsDigitsOnly(size.getText().toString()) && myIsDigitsOnly(Ssize.getText().toString()) && TextUtils.isEmpty(ConName)) {
+                        SampleSize = Integer.parseInt(size.getText().toString().trim());
+                        SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                        ConName = RanName.getText().toString().trim();
+                        namelist = ConName.split(",");
+                        validateInput();
+                    }
+                }
+            }
+
+
+
+            if (TextUtils.isEmpty(ConName)) {
+                RanName.setError("Enter the names to be selected");
+                if (myIsDigitsOnly(size.getText().toString().trim())) {
+                    size.setError("Enter the size to be chosen from");
+                    if (myIsDigitsOnly(Ssize.getText().toString().trim())) {
+                        Ssize.setError("Enter the size to be chosen");
+                    }
+                    if (myIsDigitsOnly(size.getText().toString()) && myIsDigitsOnly(Ssize.getText().toString()) && TextUtils.isEmpty(ConName)) {
+                        SampleSize = Integer.parseInt(size.getText().toString().trim());
+                        SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                        ConName = RanName.getText().toString().trim();
+                        namelist = ConName.split(",");
+                        validateInput();
+                    }
+
+                } else if (myIsDigitsOnly(Ssize.getText().toString().trim())) {
+                    Ssize.setError("Enter the size to be chosen");
+                } if (myIsDigitsOnly(size.getText().toString()) && myIsDigitsOnly(Ssize.getText().toString()) && TextUtils.isEmpty(ConName)) {
+                    SampleSize = Integer.parseInt(size.getText().toString().trim());
+                    SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                    ConName = RanName.getText().toString().trim();
+                    namelist = ConName.split(",");
+                    validateInput();
+                }
+            }
+            if (myIsDigitsOnly(size.getText().toString()) && myIsDigitsOnly(Ssize.getText().toString()) && TextUtils.isEmpty(ConName)) {
+                SampleSize = Integer.parseInt(size.getText().toString().trim());
+                SelectSize = Integer.parseInt(Ssize.getText().toString().trim());
+                ConName = RanName.getText().toString().trim();
+                namelist = ConName.split(",");
+                validateInput();
+            }*/
