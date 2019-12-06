@@ -11,6 +11,7 @@
     <string name="Back">Back</string>
     <string name="shinshil_com">shinshil.com</string>
     <string name="okoshinshil_gmail_com">okoshinshil@gmail.com</string>
+    <string name="ad_id_banner">ca-app-pub-4925692609690362/9769872568</string>
+    <string name="ad_id_interstitial">ca-app-pub-4925692609690362/9769872568</string>
     <string name="developed_by_shin_shil">Developed by Shin-Shil</string>
-
 </resources>
