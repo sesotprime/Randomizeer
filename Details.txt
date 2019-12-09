@@ -1,0 +1,36 @@
+downloaded royalty free picture 
+Created resource directory "raw" to store sample song. 
+Downloaded Photoshop to create app logo 
+
+
+Changed app icon 
+Changed splash screen Icon 
+Added the song playing feature 
+Edtted layout file
+
+Debugged 
+Pause song 
+Stop song 
+Showing the pause and stop buttons only when the song is playing 
+on back pressed function 
+
+Did research on pocketsphinx
+Downloaded and integrated pocketsphinx to library 
+
+Created PocketSphinx class 
+Modified functions to play the song when the key word "VALA" was heard 
+Created pocketsphinx activity 
+Tried running 
+Debugged with no avail 
+
+Commented out the code and started afresh with a new tutorial 
+Tried to listen for keyword 
+Did not work 
+Debugged 
+
+
+Converted back to android x artifacts 
+Added ads 
+Resolving test ads issues 
+
+Setup shinshil.com with supervisor 

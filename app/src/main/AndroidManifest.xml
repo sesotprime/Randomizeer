@@ -4,6 +4,8 @@
     package="com.randomizeer">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -11,8 +13,13 @@
         android:roundIcon="@drawable/ic_launcher"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Results" android:screenOrientation="portrait" android:parentActivityName=".MainActivity"></activity>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".Results"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />
@@ -21,14 +28,16 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
+            android:theme="@android:style/Theme.Translucent"/>
+        <!--android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/google_app_id"/>
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

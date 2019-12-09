@@ -1,21 +1,19 @@
 package com.randomizeer;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.NameList;
-
-import java.util.Arrays;
-import java.util.List;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,24 +29,68 @@ public class MainActivity extends AppCompatActivity {
     EditText size;
     EditText Ssize;
     TextView textView;
+    private InterstitialAd mInterstitialAd;
+    private AdView mBannerAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mBannerAd = findViewById(R.id.banner_AdView);
+        mInterstitialAd = createNewIntAd();
+        loadIntAdd();
+        //Load BannerAd
+        showBannerAd();
+
+    }
+
+    private void loadIntAdd() {
+        //submit.setEnabled(false);
+        AdRequest adRequest = new AdRequest.Builder().build();
+                //.addTestDevice("754DB6521943676637AE86202C5ACE52")
+                //.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                //.addTestDevice("318982EEFA2B1B71D7F4A1D588C6D720")
+                //.addTestDevice("743470B27F839084A5DFDEF4852F3733")
+        mInterstitialAd.loadAd(adRequest);
+    }
+
+    private InterstitialAd createNewIntAd() {
+        InterstitialAd intAd = new InterstitialAd(this);
+        // set the adUnitId (defined in values/strings.xml)
+        intAd.setAdUnitId(getString(R.string.ad_id_interstitial));
+        intAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+               // submit.setEnabled(true);
+            }
+            @Override
+            public void onAdFailedToLoad(int errorCode) {
+                //submit.setEnabled(true);
+            }
+
+            @Override
+            public void onAdClosed() {
+                // Proceed to the next level.
+                goToResults();
+            }
+        });
+        return intAd;
+    }
+
+    private void showBannerAd() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+                //.Builder().build();
+                //.addTestDevice("743470B27F839084A5DFDEF4852F3733");
+        mBannerAd.loadAd(adRequest);
     }
 
     public void allButtonClickHandler(View view) {
         if (view.getId() == R.id.Submit) {
             submit = findViewById(R.id.Submit);
-            //submit.setEnabled(false);
             EditText RanName = findViewById(R.id.NamesInput);
             EditText size = findViewById(R.id.totalSizeInput);
             EditText Ssize = findViewById(R.id.selectedSizeInput);
             textView = findViewById(R.id.textView);
-
-            String SampleSizeHolder = size.getText().toString();
-            String SelectSizeHolder = Ssize.getText().toString();
             if (myIsDigitsOnly(size.getText().toString())){
                 textView.append("It works1");
                 if(myIsDigitsOnly(Ssize.getText().toString())) {
@@ -145,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void validateInput() {
-        int max = 0;
+        int max;
         int min = 0;
         int defaultLength = namelist.length;
 
@@ -159,13 +201,7 @@ public class MainActivity extends AppCompatActivity {
             max = defaultLength;
         }
         Random r = new Random();
-        final TextView test = findViewById(R.id.Test);
-        final TextView test2 = findViewById(R.id.Test2);
         i = 0;
-
-        //test.setText("");
-        //test2.setText("");
-
         while (i < SelectSize) {
             int hold = r.nextInt((max - min + 1) + min);
 
@@ -181,9 +217,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
-        goToResults();
+        showIntAdd();
+        //goToResults();
     }
-        public void goToResults() {
+
+    private void showIntAdd() {
+        if(mInterstitialAd !=null && mInterstitialAd.isLoaded()){
+            mInterstitialAd.show();
+
+        }
+        else{
+            goToResults();
+        }
+
+    }
+
+    public void goToResults() {
             Intent results = new Intent(this, Results.class);
             String[] Name = Nameholder;
             results.putExtra("strings", Name);
